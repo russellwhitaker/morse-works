@@ -83,7 +83,7 @@ def main(argv):
                         help="input file (defaults to 'in.txt')")
     parser.add_argument('-o', '--outfile',
                         default='out.txt',
-                        help="input file (defaults to 'in.txt')")
+                        help="output file (defaults to 'out.txt')")
     parser.add_argument('-fw', '--farnsworth', type=int,
                         choices=[1,2,3,4,5,6,7,8,9,10],
                         default=0,
