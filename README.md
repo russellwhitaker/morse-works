@@ -28,8 +28,6 @@ optional arguments:
   -f FREQUENCY, --frequency FREQUENCY
                         starting audio frequency in Hz (defaults to 600)
   -fs FSTEP, --fstep FSTEP
-                        audio frequency reduction step size in Hz (defaults to
-                        25)
                         audio frequency reduction step size in Hz (defaults to 25)
 ```
 Sample output:
