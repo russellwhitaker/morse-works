@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 from argparse import ArgumentParser
-from itertools import chain, groupby
+from itertools import chain
 from random import shuffle
 from string import Template
 
