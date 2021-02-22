@@ -5,6 +5,7 @@ Utilities for manipulating Morse Code (CW) data streams
 A commandline script for converting a file of words (one per line) to a form which [ebook2cw](https://fkurz.net/ham/ebook2cw.html) can take as input to generate MP3 files for ICR (instant character recognition) practice.
 
 ```code
+$ scripts/morsewords.py -h
 usage: morsewords.py [-h] [-u] [-i INFILE] [-o OUTFILE]
                      [-fw {1,2,3,4,5,6,7,8,9,10}] [-s SPEED] [-ss SSTEP]
                      [-f FREQUENCY] [-fs FSTEP]
@@ -19,14 +20,16 @@ optional arguments:
   -o OUTFILE, --outfile OUTFILE
                         output file (defaults to 'out.txt')
   -fw {1,2,3,4,5,6,7,8,9,10}, --farnsworth {1,2,3,4,5,6,7,8,9,10}
-                        WPM to reduce nominal rate
+                        # of WPM to reduce nominal rate to effective rate
   -s SPEED, --speed SPEED
-                        starting speed (defaults to 15)
+                        starting WPM speed (defaults to 15)
   -ss SSTEP, --sstep SSTEP
-                        speed increase step size (defaults to 5)
+                        WPM speed increase step size (defaults to 5)
   -f FREQUENCY, --frequency FREQUENCY
                         starting audio frequency in Hz (defaults to 600)
   -fs FSTEP, --fstep FSTEP
+                        audio frequency reduction step size in Hz (defaults to
+                        25)
                         audio frequency reduction step size in Hz (defaults to 25)
 ```
 Sample output:
