@@ -41,7 +41,7 @@ class MorseWriter():
     def sort_by_size(self, words):
         """Sort words by ascending size,
            but scrambling lexical (alphabetical) ordering within
-           size groups to avoid grouping of similar works in sequence.
+           size groups to avoid grouping of similar words in sequence.
         """
         shuffle(words)
         return sorted(words, key=len)
@@ -87,13 +87,13 @@ def main(argv):
     parser.add_argument('-fw', '--farnsworth', type=int,
                         choices=[1,2,3,4,5,6,7,8,9,10],
                         default=0,
-                        help='WPM to reduce nominal rate')
+                        help='# of WPM to reduce nominal rate to effective rate')
     parser.add_argument('-s', '--speed', type=int,
                         default=15,
-                        help='starting speed (defaults to 15)')
+                        help='starting WPM speed (defaults to 15)')
     parser.add_argument('-ss', '--sstep', type=int,
                         default=5,
-                        help='speed increase step size (defaults to 5)')
+                        help='WPM speed increase step size (defaults to 5)')
     parser.add_argument('-f', '--frequency', type=int,
                         default=600,
                         help='starting audio frequency in Hz (defaults to 600)')
