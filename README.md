@@ -17,7 +17,7 @@ optional arguments:
   -i INFILE, --infile INFILE
                         input file (defaults to 'in.txt')
   -o OUTFILE, --outfile OUTFILE
-                        input file (defaults to 'in.txt')
+                        output file (defaults to 'out.txt')
   -fw {1,2,3,4,5,6,7,8,9,10}, --farnsworth {1,2,3,4,5,6,7,8,9,10}
                         WPM to reduce nominal rate
   -s SPEED, --speed SPEED
